@@ -4,6 +4,7 @@ import {
 } from 'react-bootstrap'
 import CommentTable from './comentarios/Comments.jsx';
 import { faker } from '@faker-js/faker';
+import AlertTxt from './alert/Alert.jsx';
 
 const date = new Date().toLocaleDateString()
 const randomName = faker.name.fullName();
@@ -27,6 +28,9 @@ function TrackingDeploy() {
             </Card.Text>
           </Card.Body>
         </Card>
+        <br />
+        <AlertTxt />
+        <br />
         <CommentTable />
       </Container>
     </>

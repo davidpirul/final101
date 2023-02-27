@@ -3,18 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigator from './components/views/navBar';
 import ConfirmRequest from './components/views/confirmRequest';
 import Tracking from './components/views/seguimiento/Tracking';
+import SendOffer from './components/views/enviopropuesta/SendOffer';
 
 function App() {
   return (
     <>
       <Navigator />
       <br />
-      <div className='text-center'>-------------------------------------</div>
+      <hr />
       <ConfirmRequest />
       <br />
-      <div className='text-center'>-------------------------------------</div>
+      <hr />
       <Tracking />
-    </>
+      <br />
+      <hr />
+      <SendOffer />
+    </> 
   );
 }
 
